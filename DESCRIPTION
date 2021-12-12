@@ -16,8 +16,7 @@ Imports:
     rlang,
     tidyr,
     maps,
-    graphics,
-    testthat
+    graphics
 RoxygenNote: 7.1.2
 Depends: 
     R (>= 2.10)

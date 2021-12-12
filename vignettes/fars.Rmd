@@ -1,0 +1,63 @@
+---
+title: "Vignette for the PeerGradedAssignmentPackage"
+output: rmarkdown::html_vignette
+author: "Marko Trifunovic"
+date: "`r Sys.Date()`"
+vignette: >
+  %\VignetteIndexEntry{Vignette for the PeerGradedAssignmentPackage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(PeerGradedAssignmentPackage)
+```
+
+# PeerGradedAssignmentPackage
+
+This package contains a set of functions that should allow you to produce a
+simple map of traffic accidents that occurred in the United States between
+2013 and 2015. The mentioned functions will be listed below.
+
+
+## The `make_filename` function
+
+This function generates the filename string that will be used in
+the `fars_read` function.
+
+## The `fars_read` function
+
+This function reads a single archive file based on the provided filename.
+
+## The `fars_read_years` function
+
+This function utilizes the `make_filename` function as well as the `fars_read`
+function to import years in form of a list.
+
+## The `fars_summarize_years` function
+This function creates a summary data.frame of car accidents for given year(s).
+Rows represent months, while different years are represented with columns.
+For each month in a given year there is a number of accidents that were 
+recorded.
+
+## The `fars_map_state` function
+
+This function generates a plot of accidents recorded across the selected state
+during the given year.
+
+# Dependencies
+
+* dplyr
+* readr
+* magrittr
+* rlang
+* tidyr
+* maps
+* graphics

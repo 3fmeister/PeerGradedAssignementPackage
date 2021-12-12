@@ -14,3 +14,8 @@ For this assessment you must
 4. set up the repository so that the package can be checked and built on Travis
 
 5. Once your package has built on Travis and the build is passing with no errors, warnings, or notes you should add your Travis badge to the README.md file of your package repository.
+
+
+<!-- badges: start -->
+  [![R-CMD-check](https://github.com/3fmeister/PeerGradedAssignementPackage/workflows/R-CMD-check/badge.svg)](https://github.com/3fmeister/PeerGradedAssignementPackage/actions)
+  <!-- badges: end -->

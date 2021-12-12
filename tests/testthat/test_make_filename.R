@@ -1,5 +1,5 @@
 library(testthat)
-library(fars)
+library(PeerGradedAssignmentPackage)
 library(dplyr)
 library(readr)
 library(tidyr)

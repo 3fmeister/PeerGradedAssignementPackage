@@ -36,7 +36,7 @@ You may want to take a look at the vignette:
         vignette('fars', package = 'PeerGradedAssignmentPackage').
 
 
-## Important
+## Important Note
 
 Unfortunately, although I fully followed the instructions for using Travis CI service, I was not able to build and test the package using it. I guess one of the reasons is that Travis is no longer an open-source service, and the use_travis() function is deprecated. Calling this function gives a warning and a suggestion to use the use_github_actions() function instead. I used it to check if my package is being built correctly and if it passes all the tests, as you may see on my GitHub repo. The build-badge is included in this README file. 
 
